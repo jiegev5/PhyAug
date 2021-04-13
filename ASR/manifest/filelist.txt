@@ -1,0 +1,14 @@
+test_wj_100_logitech_1m_180d.csv
+test_wj_100_logitech_1m_90_degree.csv
+test_wj_100_logitech_1m.csv
+test_wj_100_logitech_2m.csv
+test_wj_100_logitech_3m_180d.csv
+test_wj_100_logitech_3m_corner.csv
+test_wj_100_logitech_3m.csv
+test_wj_100_usb_1m_180d.csv
+test_wj_100_usb_1m_90_degree.csv
+test_wj_100_usb_1m.csv
+test_wj_100_usb_2m.csv
+test_wj_100_usb_3m_180d.csv
+test_wj_100_usb_3m_corner.csv
+test_wj_100_usb_3m.csv

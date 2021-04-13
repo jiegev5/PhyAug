@@ -1,0 +1,23 @@
+LT10 45cm retrain model v1, focus on M3,4,5 mic!!!!!!!!!!!!!!!!!!!
+Pretrained
+ATR
+Test Summary 	Average WER 21.146	Average CER 11.238	
+maono
+Test Summary 	Average WER 19.645	Average CER 10.273	
+clipon
+Test Summary 	Average WER 29.263	Average CER 16.768	
+USB
+Test Summary 	Average WER 39.427	Average CER 23.167	
+USBplug
+Test Summary 	Average WER 39.154	Average CER 24.212	
+PhyAug
+ATR
+Test Summary 	Average WER 13.984	Average CER 6.511	
+maono
+Test Summary 	Average WER 15.007	Average CER 6.849	
+clipon
+Test Summary 	Average WER 20.191	Average CER 10.225	
+USB
+Test Summary 	Average WER 18.622	Average CER 9.196	
+USBplug
+Test Summary 	Average WER 26.126	Average CER 13.826	
