@@ -45,7 +45,7 @@ Then install the python packages use `pip`:
 pip install -r deepspeech_pytorch_requirement.txt
 ```
 ## Train model
-To train model on original training dataset, run below python code on command line. Due to complexity of the model and larger training dataset, the training is quite slow. Please find the the pretrained model `librispeech_pretrained_v2.pth` in `/model` folder.
+To train model on librispeech training dataset, run below python code on command line. Due to complexity of model and large size of training dataset, the training of DeepSpeech2 is quite slow. Please find the pretrained model `librispeech_pretrained_v2.pth` in `/model` folder.
 
 Our model is trained on workstation with 4x NVIDIA 11GB RTX2080Ti GPUs, you may change the `device-ids` and `batch-size` to suit your workstation.
 
@@ -55,7 +55,7 @@ python -m multiproc train.py  --train-manifest manifest/libri_train_manifest.csv
 ```
 To continue training:
 ```bash
-python -m multiproc train.py  --train-manifest manifest/libri_train_manifest.csv --val-manifest manifest/libri_val_manifest.csv --epochs 80 --num-workers 16 --cuda  --device-ids 0,1,2,3 --learning-anneal 1.01 --batch-size 48 --no-sortaGrad --visdom  --opt-level O1 --loss-scale 1 --id libri --checkpoint --save-folder model/ --model-path model/your_model_name.pth --continue-from model/deepspeech_wj_clipon_1.pth --finetune
+python -m multiproc train.py  --train-manifest manifest/libri_train_manifest.csv --val-manifest manifest/libri_val_manifest.csv --epochs 80 --num-workers 16 --cuda  --device-ids 0,1,2,3 --learning-anneal 1.01 --batch-size 48 --no-sortaGrad --visdom  --opt-level O1 --loss-scale 1 --id libri --checkpoint --save-folder model/ --model-path model/your_model_name.pth --continue-from model/librispeech_pretrained_v2.pth --finetune
 ```
 ## Evaluate model
 The pretrained model WER on `/test_clean` is between 6% and 8%. To evaluate on original `/test_clean` dataset: 
@@ -70,7 +70,7 @@ python test.py --test-manifest manifest/meeting-room/loc3-iph7-0p45m/atr_list.cs
 ## PhyAug for DeepSpeech
 We proposed a fast microphone profiling by playing back white noise and record use microphones. The white noise data is downloadable along with microphone data and placed in `\white_noise` folder. It contains original white noise data and corresponding microphone white noise. Each white noise data is ~5mins length.
 
-To apply PhyAug for DeepSpeech, only original training dataset and microphone white noise are needed. The pretrained model `deepspeech_meetingroom_PhyAug.pth` is placed in `model/meetingroom` folder.
+To apply PhyAug for DeepSpeech, only original training dataset and microphone white noise are needed. The pretrained model `deepspeech_meetingroom_PhyAug.pth` is downloadable along with recorded dataset.
 
 ```bash
 python -m multiproc train_PhyAug.py  --train-manifest manifest/libri_train_manifest.csv --val-manifest manifest/libri_val_manifest.csv --epochs 80 --num-workers 16 --cuda  --device-ids 0,1,2,3 --learning-anneal 1.01 --batch-size 48 --no-sortaGrad --visdom  --opt-level O1 --loss-scale 1 --id PhyAug_for_librispeech --checkpoint --save-folder model/ --model-path model/your_model_name.pth --continue-from model/librispeech_pretrained_v2.pth --finetune
