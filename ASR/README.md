@@ -8,7 +8,7 @@ We apply PhyAug on [DeepSpeech2](https://arxiv.org/pdf/1512.02595v1.pdf) ASR mod
 
 ## Dataset
 - Follow link to download the [Librispeech corpus](https://www.openslr.org/12) dataset.
-- We use five microphones (M1,M2,M3,M4 and M5) to record the white noise and test dataset in a quiet meeting room. The dataset and pretrained model is available from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/1IM0MD)
+- We use five microphones (M1,M2,M3,M4 and M5) to record the white noise and test dataset in a quiet meeting room. The dataset and pretrained model is available from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/A6SC66)
 - To train/evaluate the model, download the above datasets and put dataset in `/data` folder and organize them following below hierarchy:
 ```
 /librispeech
