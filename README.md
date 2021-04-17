@@ -7,7 +7,7 @@ A detailed README how to run the code is constructed for each case study:
 - [Case study 3: Seismic Source Localization](https://github.com/jiegev5/PhyAug/tree/main/seismic_localization)
 
 ## Approach overview
-<p align="center"><img src="overview.pdf" width="480"\></p>
+<p align="center"><img src="overview.eps" width="480"\></p>
 
 In this paper, we propose *physics-directed data augmentation* (PhyAug) approach to efficiently address domain shift in cyber-physical systems. As illustrated in upper part of the figure, the general transfer learning approaches regardless of the first principles need to draw substantial data samples from both source and target domain. As illustrated in the lower part of figure, our approach use a minimum amount of data collected from the target domain to estimate the parameters of the first principle governing the domain shift process and then use the parametric first principle to generate augmented target-domain training data. Finally, the augmented target-domain data samples are used to transfer source-domain DNN.
 
