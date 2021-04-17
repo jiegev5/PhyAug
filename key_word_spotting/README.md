@@ -10,7 +10,7 @@ This case study applies Convolutional neural network for keyword spotting. Speci
 
 ## dataset
 - The original data set is downloadable from this [link](https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html).
-- We use five microphones (M1,M2,M3,M4 and M5) to record the white noise and test dataset in a quiet meeting room. The dataset is available from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/1IM0MD)
+- We use five microphones (M1,M2,M3,M4 and M5) to record the white noise and test dataset in a quiet meeting room. The dataset is available from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/1IM0MD). This dataset consists of 5 microphones’ white noise data and recorded google speech commands test data. White noise data contains true white noise data, and recorded white noise collected in a quiet meeting room, each in 5 minutes long. We record 12 speech command test dataset using 5 microphones. Each microphone data comprises 4074 1-second audio utterances, a total of 68 minutes’ long.
 - To train/evaluate the model, download the above datasets and put in `/data` folder, organize them following this hierarchy:
 ```
 /data
