@@ -39,7 +39,7 @@ A manifest file is a csv file that contains the path to the audio wave and corre
 
 ## Installation
 Install ctcdecode and etcd follows the instruction in original [repository](https://github.com/SeanNaren/deepspeech.pytorch).
-Then install the python packages use `pip`:
+Then install the python packages use `pip`. Noted that we evaluate under python3.6.9:
 
 ```bash
 pip install -r deepspeech_pytorch_requirement.txt

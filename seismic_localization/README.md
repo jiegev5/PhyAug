@@ -14,7 +14,7 @@ Dataset need to put in `python_localization/data` folder.
 
 ## Installation
 - To run Matlab code, Matlab software need to install on workstation, we use Matlab 2019b in this experiment
-- To run python code, install the python packages use `pip`
+- To run python code, install the python packages use `pip`. Noted that we evaluate under python3.6.9:
 ```bash
 pip install -r seismic_requirement.txt
 ```

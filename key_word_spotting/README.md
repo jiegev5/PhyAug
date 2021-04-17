@@ -11,7 +11,7 @@ This case study applies Convolutional neural network for keyword spotting. Speci
 ## dataset
 - The original data set is downloadable from this [link](https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html).
 - We use five microphones (M1,M2,M3,M4 and M5) to record the white noise and test dataset in a quiet meeting room. The dataset is available from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/1IM0MD)
-- To train/evaluate the model, download the above datasets and put in `/data` folder and organize them in below hierarchy:
+- To train/evaluate the model, download the above datasets and put in `/data` folder, organize them following this hierarchy:
 ```
 /data
     /original_dataset
@@ -33,7 +33,7 @@ This case study applies Convolutional neural network for keyword spotting. Speci
         /M5
 ```
 ## Installation
-Set up the virtual environment and use pip to install packages:
+Set up the virtual environment and use pip to install packages. Noted that we evaluate under python3.6.9:
 
 ```bash
 pip install -r PhyAug_kws_requirement.txt

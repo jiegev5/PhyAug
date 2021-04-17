@@ -7,7 +7,7 @@ A detailed README how to run the code is constructed for each case study:
 - [Case study 3: Seismic Source Localization](https://github.com/jiegev5/PhyAug/tree/main/seismic_localization)
 
 # Dataset
-We collect our own dataset for each case study, they are made available public. You can find detailed instructions to download them in each folder. 
+We collect our own dataset for each case study, they are made available public. You can find detailed instructions to download them in each case study link. 
 # Hardware specification
 DNN models are pretrained and codes are evaluated on our workstation with below specifications:
 - CPU: Intel Core i9-7900X 3.30GHz 13.75MB Cache 10C/20T
