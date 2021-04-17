@@ -26,9 +26,9 @@ All programs in this repo have been tested successfully on a workstation with th
 ## Citation
 If the resources in this repo benefit your work, please cite the following paper in your publication:
 
-@inproceedings{luo2021phyaug, 
-  title={PhyAug: Physics-Directed Data Augmentation for Deep Sensing Model Transfer in Cyber-Physical Systems},
-  author={Luo, Wenjie and Yan, Zhenyu and Song, Qun and Tan, Rui},
-  booktitle={The 20th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)},
-  year={2021}
+@inproceedings{luo2021phyaug, \
+  title={PhyAug: Physics-Directed Data Augmentation for Deep Sensing Model Transfer in Cyber-Physical Systems},\
+  author={Luo, Wenjie and Yan, Zhenyu and Song, Qun and Tan, Rui},\
+  booktitle={The 20th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)},\
+  year={2021}\
 }
