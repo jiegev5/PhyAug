@@ -11,7 +11,7 @@ This case study applies Convolutional neural network for keyword spotting. Speci
 ## dataset
 - The original data set is downloadable from this [link](https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html).
 - We use five microphones (M1,M2,M3,M4 and M5) to record the white noise and test dataset in a quiet meeting room. The dataset is available from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/1IM0MD)
-- To train/evaluate the model, download the above datasets and put in `/data` folder and organize them following below hierarchy:
+- To train/evaluate the model, download the above datasets and put in `/data` folder and organize them in below hierarchy:
 ```
 /data
     /original_dataset
@@ -48,6 +48,8 @@ To train on original dataset:
 ```bash
 python train_PhyAug.py --type train
 ```
+The model training time on our workstation for 40 epoches is ~2hours.
+
 ## Evaluate model
 The model accuracy on original test dataset is 90%. To evaluate model on collected microphone dataset, replace `config["data_folder"] = "../data/recorded_dataset/M1"` in `model.py`. You will see accuracy drop on microphones' dataset. We provide our pretrained model `model_12cmd_original.pt` in `/model` folder.
 
@@ -71,8 +73,4 @@ To evaluate the model, replace the model name and test data folder in `model.py`
 ```bash
 python evaluate_model.py --type eval --input_file ../model/model_12cmd_normalize_phyaug.pt
 ```
-
-## Hardware specification
-The above models are pretrained on a workstation with following specifications:
-- CPU: Intel Core i9-7900X 3.30GHz 13.75MB Cache 10C/20T
-- GPU: 4x Zotac nVidia RTX2080Ti 11GB GDDR6 PCIe x16 GPU Card
+The result corresponds to Figure 7 in our paper.

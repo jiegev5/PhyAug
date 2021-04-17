@@ -4,7 +4,7 @@ This is PyTorch implementation of ASR case study in IPSN'21 paper: [PhyAug: Phys
 This Repo is based on [deepspeech.pytorch](https://github.com/SeanNaren/deepspeech.pytorch/blob/master/README.md). **The credit goes to the corresponding authors**.
 
 ## Implementation details
-We apply PhyAug on [DeepSpeech2](https://arxiv.org/pdf/1512.02595v1.pdf) ASR model. The model is pretrained on [Librispeech corpus](https://www.openslr.org/12). DeepSpeech2 is difficult to implement, please find the original [repository](https://github.com/SeanNaren/deepspeech.pytorch) for detailed implementation.
+We apply PhyAug on [DeepSpeech2](https://arxiv.org/pdf/1512.02595v1.pdf) ASR model. The model is pretrained on [Librispeech corpus](https://www.openslr.org/12). Please find the original [repository](https://github.com/SeanNaren/deepspeech.pytorch) for detailed implementation.
 
 ## Dataset
 - Follow link to download the [Librispeech corpus](https://www.openslr.org/12) dataset.
@@ -35,7 +35,7 @@ We apply PhyAug on [DeepSpeech2](https://arxiv.org/pdf/1512.02595v1.pdf) ASR mod
         /M5
 ```
 ## Manifest files
-A manifest file is a csv file that contains the path to the audio wave and corresponding transcript. We have include the manifest files in this repo. Please find them in `/manifest` folder.
+A manifest file is a csv file that contains the path to the audio wave and corresponding transcript. We have included the manifest files in this repo. Please find them in `/manifest` folder.
 
 ## Installation
 Install ctcdecode and etcd follows the instruction in original [repository](https://github.com/SeanNaren/deepspeech.pytorch).
@@ -57,6 +57,8 @@ To continue training:
 ```bash
 python -m multiproc train.py  --train-manifest manifest/libri_train_manifest.csv --val-manifest manifest/libri_val_manifest.csv --epochs 80 --num-workers 16 --cuda  --device-ids 0,1,2,3 --learning-anneal 1.01 --batch-size 48 --no-sortaGrad --visdom  --opt-level O1 --loss-scale 1 --id libri --checkpoint --save-folder model/ --model-path model/your_model_name.pth --continue-from model/librispeech_pretrained_v2.pth --finetune
 ```
+The model training time is quite long for DeepSpeech2. It takes ~48 hours to complete training on our workstation.
+
 ## Evaluate model
 The pretrained model WER on `/test_clean` is between 6% and 8%. To evaluate on original `/test_clean` dataset: 
 ```bash
@@ -75,7 +77,5 @@ To apply PhyAug for DeepSpeech, only original training dataset and microphone wh
 ```bash
 python -m multiproc train_PhyAug.py  --train-manifest manifest/libri_train_manifest.csv --val-manifest manifest/libri_val_manifest.csv --epochs 80 --num-workers 16 --cuda  --device-ids 0,1,2,3 --learning-anneal 1.01 --batch-size 48 --no-sortaGrad --visdom  --opt-level O1 --loss-scale 1 --id PhyAug_for_librispeech --checkpoint --save-folder model/ --model-path model/your_model_name.pth --continue-from model/librispeech_pretrained_v2.pth --finetune
 ```
-## Hardware specification
-The above models are pretrained on a workstation with following specifications:
-- CPU: Intel Core i9-7900X 3.30GHz 13.75MB Cache 10C/20T
-- GPU: 4x Zotac nVidia RTX2080Ti 11GB GDDR6 PCIe x16 GPU Card
+
+The result corresponds to Figure 9 in our paper.
