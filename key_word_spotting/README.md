@@ -78,4 +78,4 @@ python evaluate_model.py --type eval --input_file ../model/model_12cmd_normalize
 ```
 The result corresponds to Figure 7 in our paper.
 
-[**Back to front page**](../README.md)
+<center>[**Back to front page**](../README.md)</center>
