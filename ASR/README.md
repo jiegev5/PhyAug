@@ -95,4 +95,6 @@ python test.py --test-manifest manifest/meeting-room/loc3-iph7-0p45m/atr_list.cs
 
 The result corresponds to Figure 9 in our paper.
 
-<center>[**Back to front page**](../README.md)</center>
+<div align="center">
+  [**Back to front page**](../README.md)
+</div>
