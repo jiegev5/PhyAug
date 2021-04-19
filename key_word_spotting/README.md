@@ -53,7 +53,7 @@ The model training time on our workstation is ~2hours for 40 epoches.
 ## Evaluate model
 The model accuracy on original test dataset is 90%. 
 
-To evaluate model on collected microphone dataset, modify `config["data_folder"] = "../data/recorded_dataset/M1"` in `model.py`, pointing to the location of microphone dataset. Note that you need to do this manually for each microphone dataset. It's expected to see accuracy drop if we test pretained model on collected microphone dataset. We provide our pretrained model `model_12cmd_original.pt` in `/model` folder.
+To evaluate model on collected microphone dataset, modify `config["data_folder"] = "../data/recorded_dataset/M1"` in `model.py`, pointing to the location of microphone dataset. Note that you need to do this manually for each microphone dataset. It's expected to see accuracy drop if testing pretained model on collected microphone dataset. We provide our pretrained model `model_12cmd_original.pt` in `/model` folder.
 
 ```bash
 python evaluate_model.py --type eval --input_file ../model/model_12cmd_original.pt
