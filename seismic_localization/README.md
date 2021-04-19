@@ -63,4 +63,4 @@ python evaluate_perturb_aug_data.py
 ```
 The results are saved in `.csv` file for processing. The results correspond to figure 16 in our paper.
 
-<center>[**Back to front page**](../README.md)</center>
+[**Back to front page**](../README.md)
