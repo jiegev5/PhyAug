@@ -551,42 +551,7 @@ class SpeechDataset(data.Dataset):
         # config["wanted_words"] = ["yes", "no","left","right"]
         config["wanted_words"] = ["yes", "no","left","right","up","down","on","off","stop","go"]
         # config["wanted_words"] = ["house"]
-
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_original/mic2mic"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_usbplug"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_atr/audio_house"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_maono/house_audio"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_clipon/house_audio"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_USB/house_audio"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/mic2mic_USBplug/house_audio"
-
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/original"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/original_testset"
-        # TR
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/TR1/ATR"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/TR1/maono"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/TR1/clipon"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/TR1/USB"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/TR1/USBplug"
-        # meeting room loc2-30cm
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-30cm/ATR"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-30cm/maono"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-30cm/clipon"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-30cm/USB"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-30cm/USBplug"
-        # meeting room loc2-45cm
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm/ATR"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm/maono"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm/clipon"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm/USB"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm/USBplug"
-        # meeting room loc2-45cm-10cmd
-        config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm-10cmd-v1/ATR"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm-10cmd-v1/maono"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm-10cmd-v1/clipon"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm-10cmd-v1/USB"
-        # config["data_folder"] = "/data1/wenjie/github/honk/speech_dataset_wenjie/meetingroom/loc2-45cm-10cmd-v1/USBplug"
+        config["data_folder"] = "../honk/speech_dataset_wenjie/meetingroom/loc2-45cm-10cmd/ATR"
         config["audio_preprocess_type"] = "MFCCs"
         return config
 
