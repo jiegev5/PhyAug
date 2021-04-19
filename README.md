@@ -11,9 +11,9 @@ A detailed **README** on how to run the code is constructed for each case study:
 
 ## Approach overview
 <p align="center"><img src="overview.svg" width="480"\></p>
-<p align="center"><em>Fig.1: Approach overview</em></p>
+<p align="center"><strong>Fig.1: Approach overview</strong></p>
 
-In this paper, we propose *physics-directed data augmentation* (PhyAug) approach to efficiently address domain shift in cyber-physical systems. As illustrated in upper part of the figure, the general transfer learning approaches regardless of the first principles need to draw substantial data samples from both source and target domain. As illustrated in the lower part of figure, our approach uses a minimum amount of data collected from the target domain to estimate the parameters of the first principle governing the domain shift process, then uses the parametric first principle to generate augmented target-domain training data. Finally, the augmented target-domain data samples are used to transfer source-domain DNN.
+In this paper, we propose *physics-directed data augmentation* (PhyAug) approach to efficiently address domain shift in cyber-physical systems. As illustrated in upper part of the Fig.1, the general transfer learning approaches regardless of the first principles need to draw substantial data samples from both source and target domain. As illustrated in the lower part of Fig.1, our approach uses a minimum amount of data collected from the target domain to estimate the parameters of the first principle governing the domain shift process, then uses the parametric first principle to generate augmented target-domain training data. Finally, the augmented target-domain data samples are used to transfer source-domain DNN.
 
 ## Dataset
 We collect our own dataset for each case study. All our datasets are made publicly available. Their download links can be found in each case study's README. 
