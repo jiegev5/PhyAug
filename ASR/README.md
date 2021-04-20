@@ -45,10 +45,26 @@ librispeech/test_clean/wav/2830-3980-0026.wav,librispeech/test_clean/txt/2830-39
 ```
 
 ## Installation
-Install ctcdecode and etcd by following the instruction in original [repository](https://github.com/SeanNaren/deepspeech.pytorch).
-Then install required python packages using `pip`. Noted that we evaluate code under python3.6.9:
+The following installation is tested on Ubuntu 18.04 with Python 3.6.9 and Ubuntu 20.04 with Python 3.8.5. We install required python packages using `pip`. 
+
+Install [Pytorch](https://pytorch.org/get-started/locally/).
+
+Then, run the following commands in a terminal to install the original [repository](https://github.com/SeanNaren/deepspeech.pytorch).
 
 ```bash
+git clone --recursive https://github.com/parlance/ctcdecode.git
+cd ctcdecode && pip install .
+cd ..
+git clone https://github.com/SeanNaren/deepspeech.pytorch.git
+pip install -r requirements.txt
+sudo apt-get install etcd 
+```
+
+
+Install [Apex](https://github.com/NVIDIA/apex#linux) from NVIDIA.
+
+```bash
+sudo apt-get install swig
 pip install -r deepspeech_pytorch_requirement.txt
 ```
 ## Train model
