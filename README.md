@@ -8,7 +8,8 @@ A detailed **README** on how to run the code is constructed for each case study:
   - Key stats: there are 15% - 35% absolute WER increases if testing pretrained model on recorded microphone dataset. PhyAug is able to recover 37% - 70% accuracy loss.
 3. [Case study 3: Seismic Source Localization](https://github.com/jiegev5/PhyAug/tree/main/seismic_localization)
   - Key stats: SVM/MLP needs more than 8,000 training samples to achieve 92% inference accuracy. With PhyAug, only less than 3% training samples are needed.
-
+4. [Case study 4: Fisheye Image Recognition](https://github.com/jiegev5/PhyAug/tree/main/Fisheye_image_recognition)
+  - Key stats: A pre-trained ResNet50 model observes 18% accuracy drop on synthetic fisheye image dataset. PhyAug is able to recover ~72% accuracy loss.
 ## Approach overview
 <p align="center"><img src="overview.svg" width="480"\></p>
 <p align="center"><strong>Fig.1: Approach overview</strong></p>
