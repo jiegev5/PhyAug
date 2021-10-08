@@ -1,0 +1,13 @@
+matplotlib==2.1.1
+seaborn==0.11.1
+torch==1.8.1+cu111
+torch_same_pad==0.1.0 # pip install git+https://github.com/CyberZHG/torch-same-pad.git
+torchvision==0.9.1+cu111
+scipy==0.19.1
+torchsummary==1.5.1
+joblib==0.16.0
+numpy==1.18.5
+pandas==0.22.0
+plotly==4.14.3
+scikit_learn==0.24.2
+umap==0.1.1
