@@ -14,7 +14,7 @@ pip install -r requirement.txt
 ```
 
 ## dataset
-- We record three smartphones (Galaxy s7, Moto Z and Pixel 4) to record 20 rooms' ABS. The training data is 10-minutes long, testing data is 2-minute long. The raw data is in `.pcm` format.
+- We use three smartphones (Galaxy s7, Moto Z and Pixel 4) to record 20 rooms' ABS. The training data is 10-minutes long, testing data is 2-minute long. The raw data is in `.pcm` format.
 - The original data set is downloadable from this [link](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/M1HDNT).
 - We provide the scripts to convert the `.pcm` files to the ABS feature and stored in `.pickle` file.
 - We suggest to create a `/data` folder and place the raw data and converted feature inside:
