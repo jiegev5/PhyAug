@@ -10,6 +10,8 @@ A detailed **README** on how to run the code is constructed for each case study:
   - Key stats: SVM/MLP needs more than 8,000 training samples to achieve 92% inference accuracy. With PhyAug, only less than 3% training samples are needed.
 4. [Case study 4: Fisheye Image Recognition](https://github.com/jiegev5/PhyAug/tree/main/Fisheye_image_recognition)
   - Key stats: A pre-trained ResNet50 model observes 18% accuracy drop on synthetic fisheye image dataset. PhyAug is able to recover ~72% accuracy loss.
+5. [Case study 5: Acoustic-Based Room Recognition](https://github.com/jiegev5/PhyAug/tree/main/room_localization)
+  - Key stats: Room recognition model pre-trained using dataset from a specific phone is observed accuracy drops on different smartphones. phyAug is able to recover 30% - 80% absolute accuracy loss.
 ## Approach overview
 <p align="center"><img src="overview.svg" width="480"\></p>
 <p align="center"><strong>Fig.1: Approach overview</strong></p>
